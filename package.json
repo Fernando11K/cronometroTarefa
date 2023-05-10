@@ -1,9 +1,9 @@
 {
-  "name": "ola-mundo",
+  "name": "cronometro-tarefas",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "./node_modules/@vue/cli-service/bin/vue-cli-service.js serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
@@ -12,6 +12,7 @@
     "vue": "^3.2.13"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "@vue/cli-plugin-babel": "~5.0.0",
