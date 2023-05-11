@@ -36,7 +36,7 @@
                 this.$emit('aoSalvarTarefa', {
                     duracaoEmSegundos: tempoDecorrido,
                     descricao: this.descricao               
-                } )
+                })
                 this.descricao = ''
             }
         }
