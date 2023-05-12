@@ -1,5 +1,5 @@
 import IProjeto from "@/interfaces/IProjeto";
-import { Store, createStore } from 'vuex'
+import { Store, createStore, useStore  as vuexUseStore} from 'vuex'
 import { InjectionKey } from "vue";
 
 interface Estado {
@@ -22,3 +22,7 @@ export const store = createStore<Estado>({
         }
     }
 })
+
+export function useStore(): Store<Estado> {
+    return vuexUseStore(key)
+}

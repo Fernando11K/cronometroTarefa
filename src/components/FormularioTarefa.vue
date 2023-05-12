@@ -7,7 +7,6 @@
                     class="input" 
                     placeholder="Qual tarefa você deseja iniciar?"
                     v-model="descricao">
-
             </div>
             <div class="column is-3">
         <div class="select">
