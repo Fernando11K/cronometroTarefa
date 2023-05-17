@@ -8,22 +8,6 @@
                 {{ notificacao.texto }}
             </div>
         </article>
-        <article class="message is-warning">
-            <div class="message-header" >
-              
-            </div>
-            <div class="message-body">
-                Aqui vai um texto de notificação
-            </div>
-        </article>
-        <article class="message is-danger">
-            <div class="message-header">
-                Atenção!
-            </div>
-            <div class="message-body">
-                Aqui vai um texto de notificação
-            </div>
-        </article>
     </div>
 </template>
 
