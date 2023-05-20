@@ -1,7 +1,7 @@
 <template>
     <div class="box formulario">
         <div class="columns">
-            <div class="column is-8" role="form" aria-label="Formulário para criação de uma nova tarefa">
+            <div class="column is-5" role="form" aria-label="Formulário para criação de uma nova tarefa">
                 <input 
                     type="text" 
                     class="input" 

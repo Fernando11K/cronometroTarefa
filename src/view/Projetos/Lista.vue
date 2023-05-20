@@ -6,7 +6,7 @@
             </span>
             <span>Novo projeto</span>
           </router-link>
-        <table class="table is fullwidth">
+        <table class="table is-fullwidth">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -38,6 +38,7 @@
 
 <script lang="ts">
     import { useStore } from '@/store'
+import { OBTER_PROJETOS } from '@/store/tipo-acoes'
     import { computed, defineComponent } from 'vue'
 
     export default defineComponent({
@@ -54,6 +55,8 @@
         },
         setup() {
             const store = useStore()
+            store.dispatch(OBTER_PROJETOS)
+            
             return {  
                 projetos: computed(() => store.state.projetos), 
                 store

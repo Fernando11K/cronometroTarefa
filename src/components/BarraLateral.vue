@@ -3,9 +3,11 @@
     <h1>
         <img src="../assets/logo.png" alt="">
     </h1>
+    <div class="has-text-centered">
     <button class="button" @click="alterarTema">
       {{ textoBotao}}
     </button>
+   </div>
     <nav class="panel mt-5">
     <ul>
       <li>
