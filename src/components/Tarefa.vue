@@ -15,10 +15,11 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from 'vue'
+import { defineComponent, PropType, computed } from 'vue'
 import CronometroTarefa from './CronometroTarefa.vue'
 import ITarefa from '../interfaces/ITarefa'
 import Box from './Box.vue'
+
 export default defineComponent({
     name: 'Tarefa',
     emits: ['aoTarefaClicada'],
@@ -33,24 +34,26 @@ export default defineComponent({
         }
     },
 
-    methods: {
-        tarefaClicada(): void {
-            this.$emit('aoTarefaClicada', this.tarefa)
+
+    setup( props, { emit }) {
+        const tarefaClicada = () => emit('aoTarefaClicada', props.tarefa)
+        const tempoGasto = computed(() => new Date(props.tarefa.duracaoEmSegundos * 1000)
+            .toISOString()
+            .substr(11, 8)
+        )
+        return {
+            tarefaClicada, 
+            tempoGasto
+    
         }
-    },
-    computed: {
-    tempoGasto () : string {
-      return new Date(this.tarefa.duracaoEmSegundos * 1000)
-        .toISOString()
-        .substr(11, 8)
     }
-  }
+
 })
 
 </script>
 
 <style scoped>
 .clicavel {
-  cursor: pointer;
+    cursor: pointer;
 }
 </style>

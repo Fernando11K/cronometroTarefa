@@ -15,13 +15,25 @@
     {
       "nome": "T",
       "id": 4
+    },
+    {
+      "nome": "ByteBank 2.0",
+      "id": 5
+    },
+    {
+      "id": 6,
+      "nome": "Estudando padrões de projeto"
+    },
+    {
+      "nome": "dfsfds",
+      "id": 7
     }
   ],
   "tarefas": [
     {
       "id": 1,
       "duracaoEmSegundos": 120,
-      "descricao": "Configuração do ambient",
+      "descricao": "Configuração do ambiente",
       "projeto": {
         "id": 1,
         "nome": " Alura Tracker 3.0"
@@ -35,6 +47,34 @@
         "nome": "Alura Tracker 3.0"
       },
       "id": 2
+    },
+    {
+      "duracaoEmSegundos": 2,
+      "descricao": "",
+      "id": 3
+    },
+    {
+      "duracaoEmSegundos": 1,
+      "descricao": "eaesa",
+      "id": 4
+    },
+    {
+      "duracaoEmSegundos": 2,
+      "descricao": "Eae",
+      "projeto": {
+        "id": 1,
+        "nome": " Alura Tracker 3."
+      },
+      "id": 5
+    },
+    {
+      "duracaoEmSegundos": 1,
+      "descricao": "dsadas",
+      "projeto": {
+        "nome": "ByteBank",
+        "id": 2
+      },
+      "id": 6
     }
   ]
 }
