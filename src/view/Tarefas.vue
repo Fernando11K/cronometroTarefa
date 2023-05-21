@@ -71,16 +71,16 @@ export default defineComponent({
             return this.tarefas.length === 0
         }
     },
-    setup() {
-        const store = useStore()
-        store.dispatch(OBTER_TAREFAS)
-        store.dispatch(OBTER_PROJETOS)
-
-        return {
-            tarefas: computed(() => store.state.tarefas),
-            store
-        }
-    }
+      // codigo anterior omitido
+  setup() {
+    const store = useStore();
+    store.dispatch(OBTER_TAREFAS);
+    store.dispatch(OBTER_PROJETOS);
+    return {
+      tarefas: computed(() => store.state.tarefa.tarefas),
+      store,
+    };
+  },
 });
 </script>
 

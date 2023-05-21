@@ -58,7 +58,7 @@ import { OBTER_PROJETOS, REMOVER_PROJETO } from '@/store/tipo-acoes'
             store.dispatch(OBTER_PROJETOS)
             
             return {  
-                projetos: computed(() => store.state.projetos), 
+                projetos: computed(() => store.state.projeto.projetos), 
                 store
             } 
         }

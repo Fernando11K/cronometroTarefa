@@ -2,18 +2,26 @@
   "projetos": [
     {
       "id": 1,
-      "nome": " Alura Tracker 3.0"
+      "nome": " Alura Tracker 3."
     },
     {
       "nome": "ByteBank",
       "id": 2
+    },
+    {
+      "id": 3,
+      "nome": "Eae"
+    },
+    {
+      "nome": "T",
+      "id": 4
     }
   ],
   "tarefas": [
     {
       "id": 1,
       "duracaoEmSegundos": 120,
-      "descricao": "Configuração do ambiente",
+      "descricao": "Configuração do ambient",
       "projeto": {
         "id": 1,
         "nome": " Alura Tracker 3.0"
